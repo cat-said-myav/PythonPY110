@@ -40,6 +40,7 @@ def product_page_view(request, page):
             if data:  # Если по данному page было найдено значение
                 data_other_products = list(filter(lambda x: x is not data,
                                                   filtering_category(DATABASE, data['category'])))[:5]
+
                 return render(request, 'app_store/product.html', context={'product': data,
                                                                           'other_products': data_other_products})
 
