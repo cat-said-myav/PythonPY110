@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
 from .models import DATABASE
 from logic.services import filtering_category
