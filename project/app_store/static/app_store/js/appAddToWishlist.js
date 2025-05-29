@@ -1,4 +1,4 @@
-// Переключение сердечка избранного
+ // Переключение сердечка избранного
 function toggleWishlistState(event) {
     event.preventDefault();
     let linkWish = event.target;

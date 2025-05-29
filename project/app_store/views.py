@@ -106,7 +106,6 @@ def cart_view(request):
         for product_id, quantity in data['products'].items():
             product = DATABASE[product_id]  # Получаем информацию о продукте
             product["quantity"] = quantity  # Реализуйте
-            print(product["quantity"])
             product["price_total"] = round(quantity * product['price_after'], 2)  # Реализуйте
             products.append(product)
 

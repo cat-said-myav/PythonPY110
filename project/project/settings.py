@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'app_datetime',
     'app_store',
-    'app_login'
+    'app_login',
+    'app_wishlist'
 ]
 
 MIDDLEWARE = [
