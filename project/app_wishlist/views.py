@@ -26,7 +26,7 @@ def wishlist_view_json(request):
     """
     if request.method == "GET":
         username = get_user(request).username  # from django.contrib.auth import get_user
-        data = view_in_wishlist(username)
+        data = view_in_wishlist(username)[username]
         return JsonResponse(data, json_dumps_params={'ensure_ascii': False,
                                                      'indent': 4})
 
